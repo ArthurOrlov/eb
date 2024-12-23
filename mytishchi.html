@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="фермерский рынок экобазар подмосковье" />
+  <meta name="description"
+    content="ЭкоБазар – сеть фермерских рынков в Москве и Подмосковье. Самый широкий ассортимент разных продуктов для вас и вашей семьи" />
+  <title>Мытищи</title>
+
+  <link rel="icon" href="./img/favicon.svg" type="image/x-icon">
+
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/header_popup-seach.css">
+  <link rel="stylesheet" href="./css/header_popup-map.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/footer-popup.css">
+
+  <link rel="stylesheet" href="./css/slider-main.css">
+  <link rel="stylesheet" href="./css/lib.css">
+
+  <link rel="stylesheet" href="./css/main_events.css">
+  <link rel="stylesheet" href="./css/main_assortment.css">
+  <link rel="stylesheet" href="./css/main_information.css">
+  <link rel="stylesheet" href="./css/main_contacts.css">
+  <link rel="stylesheet" href="./css/main_rent.css">
+
+  <link rel="stylesheet" href="./css/main_adaptation.css">
+</head>
+
+<body>
+  <section class="container__start">
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__top">
+          <ul class="header__top-list">
+            <li class="header__top-list--item">
+              <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">
+                  <img class="dropbtn-img" src="./img/yellow_mark.png" alt="mark">
+                  Мытищи
+                  <img class="dropbtn-arrow" src="./img/drop-arrow.png" alt="arrow">
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="Obninsk.html">Обнинск</a>
+                </div>
+              </div>
+            </li>
+            <li class="header__top-list--item">
+              <a href="#contacts" class="header__top-list--item-link">Как добраться</a>
+            </li>
+            <li class="header__top-list--item open-header-popup-map">
+              <a href="" class="header__top-list--item-link header__top-list--item-link--modal">Карта
+                ТЦ</a>
+            </li>
+
+            <div class="header-popup-map">
+              <form class="popup-map">
+                <img src="./img/close-item.png" class="close-popup-map">
+                <div class="container">
+                  <div class="container modal__map-container">
+                    <div class="modal__map-title">экобазар мытищи</div>
+                    <div class="modal__map-list">
+                      <div class="modal__map-menu">
+                        <div class="modal__map-floor">
+                          <div class="modal__map-floor--text">этаж</div>
+                          <div class="modal__map-floor--number modal__map-floor--number-active" data-path="one">1</div>
+                          <div class="modal__map-floor--number" data-path="two">2</div>
+                        </div>
+
+                        <div class="modal__map-download">
+                          <a class="modal__map-download--link" href="./img/MytischiMap.pdf" download><img
+                              class="modal__map-download--link-img" src="./img/download-white.png">сохранить карту</a>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div
+                    class="container modal__map-container-img modal__map-container-img-active dragscroll dragscroll-mob"
+                    data-target="one">
+                    <div><img class="modal__map-img" id="map" src="./img/MytischiFloorFirst.svg"></div>
+                    <div class="zoom-container">
+                      <div class="zoom-container--plus"><img class="zoom-container--plus-img" onclick="zoomin()"
+                          src="./img/plus-icon.png" alt=""></div>
+                      <div class="zoom-container--minus"><img class="zoom-container--minus-img" onclick="zoomout()"
+                          src="./img/minus-icon.png" alt=""></div>
+                    </div>
+                  </div>
+
+                  <div class="container modal__map-container-img dragscroll dragscroll-mob" data-target="two">
+                    <div><img class="modal__map-img" id="mapSecond" src="./img/MytischiFloorSecond.svg"></div>
+                    <div class="zoom-container">
+                      <div class="zoom-container--plus"><img class="zoom-container--plus-img" onclick="zoominSecond()"
+                          src="./img/plus-icon.png" alt=""></div>
+                      <div class="zoom-container--minus"><img class="zoom-container--minus-img"
+                          onclick="zoomoutSecond()" src="./img/minus-icon.png" alt=""></div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <li class="header__top-list--item">
+              <a href="AboutMytishchi.html" class="header__top-list--item-link">Контакты</a>
+            </li>
+            <li class="open-header-popup-seach">
+              <a href="#" class="header__top-list--item-seach">
+                <img class="header__top-list--item-seach-img" src="./img/seach-icon.png" alt="seach">
+              </a>
+            </li>
+            <div class="header-popup-seach">
+              <form class="popup-seach">
+                <img src="./img/close-item.png" class="close-popup-seach">
+                <div class="header__popup-seach--block">
+                  <input class="header__popup-seach--block-input" type="text" placeholder="Поиск...">
+                  <img src="./img/seach-icon.png" alt="" class="search-icon">
+                </div>
+              </form>
+            </div>
+            <div class="header-seach-menu-mob">
+              <div class="open-header-popup-seach header-seach-mob">
+                <a href="#" class="header__top-list--item-seach">
+                  <img class="header__top-list--item-seach-img" src="./img/seach-icon.png" alt="seach">
+                </a>
+              </div>
+              <div class="burger__menu">
+                <div class="hamburger" id="hamburger-1">
+                  <span class="line"></span>
+                  <span class="line"></span>
+                  <span class="line"></span>
+                </div>
+                <div>
+                  <ul id="menu">
+                    <li class="header__down-list--item">
+                      <a href="events_Mytischi.html" class="header__down-list--item-link">события</a>
+                    </li>
+                    <li class="header__down-list--item">
+                      <a href="#assort" class="header__down-list--item-link">ассортимент</a>
+                    </li>
+                    <li class="header__down-list--item">
+                      <a href="AboutMytishchi.html" class="header__down-list--item-link">о нас</a>
+                    </li>
+                    <li class="header__down-list--item">
+                      <a href="Tenants_Mytischi.html" class="header__down-list--item-link">аренда</a>
+                    </li>
+                    <li class="header__down-list--item">
+                      <a href="requisites_Obninsk.html" class="header__down-list--item-link">реквизиты</a>
+                    </li>
+                    <ul class="header__down-sociallist header__down-sociallist--mob">
+                      <li class="header__down-sociallist--item">
+                        <a href="#" target="_blank" class="header__down-sociallist--item-link">
+                          <img class="header__down-sociallist--item-link-img" src="./img/telegram.svg" alt="telegram">
+                        </a>
+                      </li>
+                      <li class="header__down-sociallist--item">
+                        <a href="https://www.youtube.com/channel/UCqaaVCqPg4NUeqDAR8mbNTg" target="_blank"
+                          class="header__down-sociallist--item-link">
+                          <img class="header__down-sociallist--item-link-img" src="./img/youtube.svg" alt="youtube"
+                            style="width: 14px; margin-left: 5px;">
+                        </a>
+                      </li>
+                      <li class="header__down-sociallist--item">
+                        <a href="https://vk.com/ecobazar_obninsk" class="header__down-sociallist--item-link"
+                          target="_blank">
+                          <img class="header__down-sociallist--item-link-img" src="./img/vk.svg" alt="vk">
+                        </a>
+                      </li>
+                    </ul>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </div>
+        <div class="header__down">
+          <div class="header__down-item"><a href="index.html"><img class="header__down-logo" src="./img/logo.png"
+                alt=""></a></div>
+          <div class="header__down-item">
+            <ul class="header__down-list">
+              <li class="header__down-list--item">
+                <a href="events_Mytischi.html" class="header__down-list--item-link">события</a>
+              </li>
+              <li class="header__down-list--item">
+                <a href="#assort" class="header__down-list--item-link">ассортимент</a>
+              </li>
+              <li class="header__down-list--item">
+                <a href="AboutMytishchi.html" class="header__down-list--item-link">о нас</a>
+              </li>
+              <li class="header__down-list--item">
+                <a href="Tenants_Mytischi.html" class="header__down-list--item-link">аренда</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__down-item">
+            <ul class="header__down-sociallist">
+              <li class="header__down-sociallist--item">
+                <a href="#" class="header__down-sociallist--item-link" target="_blank">
+                  <img class="header__down-sociallist--item-link-img" src="./img/telegram.svg" alt="telegram">
+                </a>
+              </li>
+              <li class="header__down-sociallist--item">
+                <a href="https://www.youtube.com/channel/UCqaaVCqPg4NUeqDAR8mbNTg"
+                  class="header__down-sociallist--item-link" target="_blank">
+                  <img class="header__down-sociallist--item-link-img" src="./img/youtube.svg" alt="youtube"
+                    style="width: 15px; margin-left: 3px;">
+                </a>
+              </li>
+              <li class="header__down-sociallist--item">
+                <a href="https://vk.com/ecobazar_mytischi" class="header__down-sociallist--item-link" target="_blank">
+                  <img class="header__down-sociallist--item-link-img" src="./img/vk.svg" alt="vk">
+                </a>
+              </li>
+            </ul>
+          </div>
+
+
+
+        </div>
+      </div>
+    </header>
+
+    <div class="player">
+      <div class="timeline">
+
+        <div class="timeline-chunk timeline-chunk-active">
+          <div class="timeline-chunk-inner"></div>
+        </div>
+
+        <div class="timeline-chunk">
+          <div class="timeline-chunk-inner"></div>
+        </div>
+
+        <div class="timeline-chunk">
+          <div class="timeline-chunk-inner"></div>
+        </div>
+
+        <div class="timeline-chunk">
+          <div class="timeline-chunk-inner"></div>
+        </div>
+
+      </div>
+
+      <div class="player-content-wrapper">
+        <div class="player-chunk-switcher player-chunk-prev">
+          <img src="./img/leftblackarrow.png" alt="">
+        </div>
+        <div class="player-chunk-switcher player-chunk-next">
+          <img src="./img/rightblackarrow.png" alt="">
+        </div>
+
+        <div class="player-content">
+          <div class="player-chunk player-chunk-active">
+            <img src="img/pizza.png" alt="">
+          </div>
+          <div class="player-chunk">
+            <img src="img/apple.png" alt="">
+          </div>
+          <div class="player-chunk">
+            <img src="img/pizza.png" alt="">
+          </div>
+          <div class="player-chunk">
+            <video autoplay loop muted playsinline>
+              <source src="./img/videotest.mp4" type='video/mp4'>
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="events-section">
+    <div class="events-title-mob">События</div>
+    <div class="container events__container">
+      <h2>События</h2>
+
+      <div class="events__line"></div>
+      <a href="events__details.html" class="events__card">
+        <img class="events__card-img" src="./img/eventpizza.png" alt="">
+        <div class="events__card-title">Новое кафе на фуд-корте Обнинска</div>
+        <div class="events__card-text">Супы, салаты, второе, свещие овощи и фрукты, чай и кофе</div>
+      </a>
+      <div class="ant-carousel">
+        <div class="ant-carousel-hider">
+          <div class="participants-title">
+            <div class="carousel-arrows">
+              <div class="ant-carousel-arrow-left">
+                <img class="ant-carousel-arrow-left--img" src="./img/leftblackarrow.png">
+              </div>
+              <div class="ant-carousel-arrow-right">
+                <img class="ant-carousel-arrow-left--img" src="./img/rightblackarrow.png">
+              </div>
+            </div>
+          </div>
+
+          <ul class="ant-carousel-list">
+            <li class="ant-carousel-element">
+              <div class="events__card">
+                <a href="events__details.html" class="events__card-link">
+                  <img class="events__card-img" src="./img/eventoxota.png" alt="">
+                  <div class="events__card-title">Новое кафе на фуд-корте Обнинска</div>
+                  <div class="events__card-text">Супы, салаты, второе, свещие овощи и фрукты, чай и кофе</div>
+                </a>
+              </div>
+            </li>
+            <li class="ant-carousel-element">
+              <div class="events__card">
+                <a href="events__details.html" class="events__card-link">
+                  <img class="events__card-img" src="./img/eventstr.png" alt="">
+                  <div class="events__card-title">Акция на фуд-корте Обнинска</div>
+                  <div class="events__card-text">Cалаты, второе, свещие овощи и фрукты, чай и кофе</div>
+                </a>
+              </div>
+            </li>
+            <li class="ant-carousel-element">
+              <div class="events__card">
+                <a href="events__details.html" class="events__card-link">
+                  <img class="events__card-img" src="./img/delish.png" alt="">
+                  <div class="events__card-title">Хит сезона на фуд-корте Обнинска</div>
+                  <div class="events__card-text">Супы, салаты, второе, свещие овощи и фрукты, чай и кофе</div>
+                </a>
+              </div>
+            </li>
+            <li class="ant-carousel-element">
+              <div class="events__card">
+                <a href="events__details.html" class="events__card-link">
+                  <img class="events__card-img" src="./img/eventstr.png" alt="">
+                  <div class="events__card-title">Новое на фуд-корте Обнинска</div>
+                  <div class="events__card-text">Супы, салаты, второе, свещие овощи и фрукты, чай и кофе</div>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="ant-carousel-dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="assortment">
+    <a name="assort"></a>
+    <div class="container">
+      <h2>Ассортимент</h2>
+      <div class="assortment__menu">
+        <a class="assortment__menu-item nav__link" data-path="2">
+          <img class="assortment__menu-item--img" src="./img/food-cord.png" alt="">
+          <h3>фуд-корт</h3>
+        </a>
+        <a class="assortment__menu-item assortment__menu-item-active nav__link" data-path="1">
+          <img class="assortment__menu-item--img" src="./img/ferma.png" alt="">
+          <h3>фермерские продукты</h3>
+        </a>
+        <a class="assortment__menu-item nav__link" data-path="3">
+          <img class="assortment__menu-item--img" src="./img/shop.png" alt="">
+          <h3>товары и услуги</h3>
+        </a>
+      </div>
+      <div class="tab-content tab-content-active" data-target="1">
+        <ul class="tab-content-list">
+          <li class="filter filter-active" data-filter="reset">все</li>
+          <li class="filter" data-filter="beef">мясо</li>
+          <li class="filter" data-filter="delicacies">деликатесы</li>
+          <li class="filter" data-filter="fish">рыба</li>
+          <li class="filter" data-filter="vegetables">овощи</li>
+          <li class="filter" data-filter="fruits">фрукты</li>
+          <li class="filter" data-filter="berries">ягоды, грибы, соленья</li>
+          <li class="filter" data-filter="birds">птица и яйца</li>
+        </ul>
+        <div id="list" class="tab-content-cards">
+          <a href="shop.html" class="item beef">
+            <img class="tab-content-cards-img" src="./img/meet.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№31</div>
+            </div>
+            <div class="tab-content-cards-title">Мясо</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+              ipsam impedit nostrum nam ad ut molestias, aliquam a? Iusto, veritatis voluptatum cumque debitis dolor
+              possimus culpa voluptates labore tenetur quibusdam!
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:"></div>
+          </a>
+          <a href="shop.html" class="item delicacies">
+            <img class="tab-content-cards-img" src="./img/delish.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№10</div>
+            </div>
+            <div class="tab-content-cards-title">Деликатесы</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+              perspiciatis tenetur nemo aspernatur
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:">mail@mail.ru</div>
+          </a>
+          <a href="shop.html" class="item beef">
+            <img class="tab-content-cards-img" src="./img/meet.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№54</div>
+            </div>
+            <div class="tab-content-cards-title">Мясо</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+              ipsam impedit nostrum nam ad ut molestias, aliquam a? Iusto, !
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:"></div>
+          </a>
+          <a href="shop.html" class="item vegetables">
+            <img class="tab-content-cards-img" src="./img/fruit.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№31</div>
+            </div>
+            <div class="tab-content-cards-title">Овощи</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+              ipsam impedit nostrum nam ad ut molestias, aliquam
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:">mail@mail.ru</div>
+          </a>
+          <a href="shop.html" class="item beef">
+            <img class="tab-content-cards-img" src="./img/veg.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№77</div>
+            </div>
+            <div class="tab-content-cards-title">Овощи</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+              ipsam impedit nostrum nam ad ut molestias, aliquam
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:">mail@mail.ru</div>
+          </a>
+          <a href="shop.html" class="item birds">
+            <img class="tab-content-cards-img" src="./img/meet.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№78</div>
+            </div>
+            <div class="tab-content-cards-title">Птица</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+              ipsam impedit nostrum nam ad ut molestias, aliquam a? Iusto, veritatis voluptatum!
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:">mail@mail.ru</div>
+          </a>
+          <a href="shop.html" class="item delicacies">
+            <img class="tab-content-cards-img" src="./img/meet.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№24</div>
+            </div>
+            <div class="tab-content-cards-title">Деликатесы</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+              ipsam impedit nostrum nam ad ut molestias, aliquam a? Iusto, veritatis voluptatum!
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:">mail@mail.ru</div>
+          </a>
+          <a href="shop.html" class="item vegetables">
+            <img class="tab-content-cards-img" src="./img/veg.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№31</div>
+            </div>
+            <div class="tab-content-cards-title">Овощи</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+              ipsam impedit nostrum nam ad ut molestias, aliquam
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:"></div>
+          </a>
+          <a href="shop.html" class="item beef">
+            <img class="tab-content-cards-img" src="./img/meet.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№47</div>
+            </div>
+            <div class="tab-content-cards-title">Мясо</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+              ipsam
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:">mail@mail.ru</div>
+          </a>
+          <a href="shop.html" class="item vegetables">
+            <img class="tab-content-cards-img" src="./img/meet.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№47</div>
+            </div>
+            <div class="tab-content-cards-title">Овощи</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+              ipsam
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:"></div>
+          </a>
+          <a href="shop.html" class="item fish">
+            <img class="tab-content-cards-img" src="./img/meet.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№72</div>
+            </div>
+            <div class="tab-content-cards-title">Рыба</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+              ipsam
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:">mail@mail.ru</div>
+          </a>
+          <a href="shop.html" class="item vegetables">
+            <img class="tab-content-cards-img" src="./img/milk.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№44</div>
+            </div>
+            <div class="tab-content-cards-title">Овощи</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+              ipsam
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:">mail@mail.ru</div>
+          </a>
+        </div>
+      </div>
+      <div class="tab-content" data-target="2">
+        <div id="list" class="tab-content-cards">
+          <a href="shop.html" class="item beef">
+            <img class="tab-content-cards-img" src="./img/meet.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№31</div>
+            </div>
+            <div class="tab-content-cards-title">Мясо</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+              ipsam impedit nostrum nam ad ut molestias, aliquam a? Iusto, veritatis voluptatum cumque debitis dolor
+              possimus culpa voluptates labore tenetur quibusdam!
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:"></div>
+          </a>
+          <a href="shop.html" class="item delicacies">
+            <img class="tab-content-cards-img" src="./img/delish.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№10</div>
+            </div>
+            <div class="tab-content-cards-title">Деликатесы</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+              perspiciatis tenetur nemo aspernatur
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:">mail@mail.ru</div>
+          </a>
+          <a href="shop.html" class="item beef">
+            <img class="tab-content-cards-img" src="./img/meet.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№54</div>
+            </div>
+            <div class="tab-content-cards-title">Мясо</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+              ipsam impedit nostrum nam ad ut molestias, aliquam a? Iusto, !
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:"></div>
+          </a>
+          <a href="shop.html" class="item vegetables">
+            <img class="tab-content-cards-img" src="./img/fruit.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№31</div>
+            </div>
+            <div class="tab-content-cards-title">Овощи</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+              ipsam impedit nostrum nam ad ut molestias, aliquam
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:">mail@mail.ru</div>
+          </a>
+          <a href="shop.html" class="item beef">
+            <img class="tab-content-cards-img" src="./img/veg.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№77</div>
+            </div>
+            <div class="tab-content-cards-title">Овощи</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+              ipsam impedit nostrum nam ad ut molestias, aliquam
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:">mail@mail.ru</div>
+          </a>
+          <a href="shop.html" class="item birds">
+            <img class="tab-content-cards-img" src="./img/meet.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№78</div>
+            </div>
+            <div class="tab-content-cards-title">Птица</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+              ipsam impedit nostrum nam ad ut molestias, aliquam a? Iusto, veritatis voluptatum!
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:">mail@mail.ru</div>
+          </a>
+          <a href="shop.html" class="item delicacies">
+            <img class="tab-content-cards-img" src="./img/meet.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№24</div>
+            </div>
+            <div class="tab-content-cards-title">Деликатесы</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+              ipsam impedit nostrum nam ad ut molestias, aliquam a? Iusto, veritatis voluptatum!
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:">mail@mail.ru</div>
+          </a>
+          <a href="shop.html" class="item vegetables">
+            <img class="tab-content-cards-img" src="./img/veg.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№31</div>
+            </div>
+            <div class="tab-content-cards-title">Овощи</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+              ipsam impedit nostrum nam ad ut molestias, aliquam
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:"></div>
+          </a>
+          <a href="shop.html" class="item beef">
+            <img class="tab-content-cards-img" src="./img/meet.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№47</div>
+            </div>
+            <div class="tab-content-cards-title">Мясо</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+              ipsam
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:">mail@mail.ru</div>
+          </a>
+          <a href="shop.html" class="item vegetables">
+            <img class="tab-content-cards-img" src="./img/meet.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№47</div>
+            </div>
+            <div class="tab-content-cards-title">Овощи</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+              ipsam
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:"></div>
+          </a>
+          <a href="shop.html" class="item fish">
+            <img class="tab-content-cards-img" src="./img/meet.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№72</div>
+            </div>
+            <div class="tab-content-cards-title">Рыба</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+              ipsam
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:">mail@mail.ru</div>
+          </a>
+          <a href="shop.html" class="item vegetables">
+            <img class="tab-content-cards-img" src="./img/milk.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№44</div>
+            </div>
+            <div class="tab-content-cards-title">Овощи</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+              ipsam
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:">mail@mail.ru</div>
+          </a>
+        </div>
+      </div>
+      <div class="tab-content" data-target="3">
+        <ul class="tab-content-list">
+          <li class="filterShop filterShop-active" data-tab="reset" data-filter="reset">все</li>
+          <li class="filterShop" data-tab="beef" data-filter="beef">мясо</li>
+          <li class="filterShop" data-tab="delicacies" data-filter="delicacies">деликатесы</li>
+          <li class="filterShop" data-tab="fish" data-filter="fish">рыба</li>
+          <li class="filterShop" data-tab="vegetables" data-filter="vegetables">овощи</li>
+          <li class="filterShop" data-tab="fruits" data-filter="fruits">фрукты</li>
+          <li class="filterShop" data-tab="berries" data-filter="berries">ягоды, грибы, соленья</li>
+          <li class="filterShop" data-tab="birds" data-filter="birds">птица и яйца</li>
+        </ul>
+        <div id="list" class="tab-content-cards">
+          <a href="shop.html" class="item beef">
+            <img class="tab-content-cards-img" src="./img/meet.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№31</div>
+            </div>
+            <div class="tab-content-cards-title">Мясо</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+              ipsam impedit nostrum nam ad ut molestias, aliquam a? Iusto, veritatis voluptatum cumque debitis dolor
+              possimus culpa voluptates labore tenetur quibusdam!
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:"></div>
+          </a>
+          <a href="shop.html" class="item delicacies">
+            <img class="tab-content-cards-img" src="./img/delish.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№10</div>
+            </div>
+            <div class="tab-content-cards-title">Деликатесы</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+              perspiciatis tenetur nemo aspernatur
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:">mail@mail.ru</div>
+          </a>
+          <a href="shop.html" class="item beef">
+            <img class="tab-content-cards-img" src="./img/meet.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№54</div>
+            </div>
+            <div class="tab-content-cards-title">Мясо</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+              ipsam impedit nostrum nam ad ut molestias, aliquam a? Iusto, !
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:"></div>
+          </a>
+          <a href="shop.html" class="item vegetables">
+            <img class="tab-content-cards-img" src="./img/fruit.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№31</div>
+            </div>
+            <div class="tab-content-cards-title">Овощи</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+              ipsam impedit nostrum nam ad ut molestias, aliquam
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:">mail@mail.ru</div>
+          </a>
+          <a href="shop.html" class="item beef">
+            <img class="tab-content-cards-img" src="./img/veg.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№77</div>
+            </div>
+            <div class="tab-content-cards-title">Овощи</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+              ipsam impedit nostrum nam ad ut molestias, aliquam
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:">mail@mail.ru</div>
+          </a>
+          <a href="shop.html" class="item birds">
+            <img class="tab-content-cards-img" src="./img/meet.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№78</div>
+            </div>
+            <div class="tab-content-cards-title">Птица</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+              ipsam impedit nostrum nam ad ut molestias, aliquam a? Iusto, veritatis voluptatum!
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:">mail@mail.ru</div>
+          </a>
+          <a href="shop.html" class="item delicacies">
+            <img class="tab-content-cards-img" src="./img/meet.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№24</div>
+            </div>
+            <div class="tab-content-cards-title">Деликатесы</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+              ipsam impedit nostrum nam ad ut molestias, aliquam a? Iusto, veritatis voluptatum!
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:">mail@mail.ru</div>
+          </a>
+          <a href="shop.html" class="item vegetables">
+            <img class="tab-content-cards-img" src="./img/veg.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№31</div>
+            </div>
+            <div class="tab-content-cards-title">Овощи</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+              ipsam impedit nostrum nam ad ut molestias, aliquam
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:"></div>
+          </a>
+          <a href="shop.html" class="item beef">
+            <img class="tab-content-cards-img" src="./img/meet.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№47</div>
+            </div>
+            <div class="tab-content-cards-title">Мясо</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+              ipsam
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:">mail@mail.ru</div>
+          </a>
+          <a href="shop.html" class="item vegetables">
+            <img class="tab-content-cards-img" src="./img/meet.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№47</div>
+            </div>
+            <div class="tab-content-cards-title">Овощи</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+              ipsam
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:"></div>
+          </a>
+          <a href="shop.html" class="item fish">
+            <img class="tab-content-cards-img" src="./img/meet.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№72</div>
+            </div>
+            <div class="tab-content-cards-title">Рыба</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+              ipsam
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:">mail@mail.ru</div>
+          </a>
+          <a href="shop.html" class="item vegetables">
+            <img class="tab-content-cards-img" src="./img/milk.png" alt="">
+            <div class="tab-content-cards-numberblock">
+              <div class="tab-content-cards-place">торговое место</div>
+              <div class="tab-content-cards-number">№44</div>
+            </div>
+            <div class="tab-content-cards-title">Овощи</div>
+            <div class="tab-content-cards-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+              ipsam
+            </div>
+            <div class="tab-content-cards-mail" href="mailto:">mail@mail.ru</div>
+          </a>
+        </div>
+      </div>
+      <div class="tab-conten-btnblock">
+        <button id="show-more" class="tab-content-btn">
+          <img class="tab-content-btn--img" src="./img/aroundarrow.svg" alt="arrow">
+          <p>загрузить еще</p>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="information">
+    <p>ЭкоБазар — это не просто сельскохозяйственный рынок, это уникальный торговый формат, где Вы всегда сможете
+      найти свежие фермерские продукты и комплекc необходимых<br>бытовых услуг.</p>
+    <a href="AboutMytishchi.html" class="information__link">подробнее об экобазаре</a>
+  </section>
+
+  <section class="contacts">
+    <a name="contacts"></a>
+    <div class="contacts__map"><iframe
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A477f150e2d3f3a1b95be06c2e401d8843bb65fab168d77c2280979c335b3a088&amp;source=constructor"
+        width="100%" height="750" frameborder="0"></iframe></div>
+    <div class="container contacts__container">
+      <div class="contacts__block">
+        <h4>контакты</h4>
+        <div class="contact__block-mob">
+          <div class="contacts__block-address">
+            <p class="contacts__block-address--title">адрес</p>
+            <p class="contacts__block-address--text">г. Мытищи, б-р Ветеранов, стр. 2</p>
+            <div class="contacts__block-address--item">
+              <div class="contacts__block-address--item-link">
+                <a href="https://yandex.ru/maps/10740/mytischi/?ll=37.720306%2C55.906524&mode=routes&rtext=~55.909231%2C37.720043&rtt=auto&ruri=~ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjkzMzkyNhJn0KDQvtGB0YHQuNGPLCDQnNC-0YHQutC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0JzRi9GC0LjRidC4LCDQsdGD0LvRjNCy0LDRgCDQktC10YLQtdGA0LDQvdC-0LIsINGBMiIKDVPhFkIVDaNfQg%2C%2C&utm_campaign=desktop&utm_medium=search&utm_source=maps&z=15.21"
+                  target="_blank">Как добраться
+                  <img class="contacts__block-address--link-item--img" src="./img/whitearrow.png" alt="arrow">
+                </a>
+              </div>
+              <div class="contacts__block-address--item-link open-header-popup-map">
+                <a>карта экобазара<img class="contacts__block-address--link-item--img" src="./img/whitearrow.png"
+                    alt="arrow">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="contacts__block-address--telmail">
+            <div><a href="tel:+74955827711" class="contacts__block-address--tel-link">+7 (495) 582-77-11</a></div>
+            <div><a href="mailto:info@eco-bazar.ru" class="contacts__block-address--mail-link">info@eco-bazar.ru</a>
+            </div>
+          </div>
+          <div>
+            <p class="contacts__block-address--title">режим работы</p>
+            <p class="contacts__block-address--text">ежедневно с 9:00 до 21:00</p>
+            <a class="contacts__block-address--calendar" href="sanitary.html"><img
+                class="contacts__block-address--calendar-img" src="./img/calendar-icon.png" alt="calendar"> график
+              санитарных дней</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="rent">
+    <div class="rent__half"></div>
+    <div class="rent__half">
+      <div class="rent__title">
+        <h2>Аренда</h2>
+        <div class="events__line"></div>
+      </div>
+      <div class="rent__block">
+
+        <div class="rent__block-up">
+          <p class="rent__block-text">Экобазар &mdash; это проект холдинга недвижимости КорпЭстейт, входящего в
+            корпорацию<br>&laquo;Ростик Групп&raquo;, в основе которого лежит идея создания сети сельскохозяйственных
+            рынков нового
+            поколения.
+          </p>
+          <div class="rent__block-contacts">
+            <div class="rent__block-contacts--title">контакты</div>
+            <div class="rent__block-contacts--title--telblock"><a href="tel:+74955827711#2773"
+                class="rent__block-contacts--title--tel">+7 (495) 582-77-11#2773</a>
+            </div>
+            <div><a href="mailto:press@eco-bazar.ru" class="rent__block-contacts--title--mail">press@eco-bazar.ru</a>
+            </div>
+            <div class="rent__block-contacts__item">
+              <a href="Tenants_Mytischi.html" class="rent__block-contacts__link">подробнее
+                <img class="rent__block-contacts__link--img" src="./img/blackarrow.png" alt="arrow">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <form id="basic-form" method="POST" action="send.php" class="rent__block-middle">
+          <div class="rent__block-middle">
+            <div class="input-star--half-block">
+              <div class="input-star input-star--half">
+                <input id="name" name="name" class="fakeinput" type="text" minlength="3"
+                  data-msg="Укажите ваше имя и(ли) бренд">
+                <span class="holder">Имя / бренд</span>
+              </div>
+              <div class="input-star input-star--half">
+                <input id="phone" name="phone" class="fakeinput" required data-msg="Введите номер телефона">
+                <span class="holder">Телефон<span>*</span></span>
+              </div>
+            </div>
+
+            <div class="input-star">
+              <input class="fakeinput rent__block-middle--question" type="text">
+              <span class="holder">Опишите ваш бизнес или задайте вопрос</span>
+            </div>
+
+            <div id="upload-container" method="POST" action="send.php">
+              <div>
+                <input id="file-input" type="file" name="file" multiple>
+                <span>Перетяните или</span>
+                <label for="file-input">выберите файл</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="download-files">
+            <div class="download-files--item">
+              <a href="#" class="download-files--item-link">Файл №1</a>
+            </div>
+            <div class="download-files--item">
+              <a href="#" class="download-files--item-link">Файл №1</a>
+            </div>
+          </div>
+
+          <div class="rent__block-down">
+            <p class="rent__block-copyright">Указывая свои данные, вы даете согласие<br>на обработку персональных
+              данных<br>в
+              соответствии с
+              <a class="rent__block-copyright-link" href="#">политикой конфиденциальности</a>
+            </p>
+            <button class="rent__block-down--link">оставить заявку</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer__container">
+      <div class="footer__block">
+        <div class="footer__logo">
+          <img class="footer__logo-img" src="./img/logowhite.png" alt="logo">
+        </div>
+      </div>
+      <div class="footer__block">
+        <ul class="footer__list">
+          <li class="footer__list-item"><a class="footer__list-item--link" href="events_Mytischi.html">события</a></li>
+          <li class="footer__list-item"><a class="footer__list-item--link" href="mytishchi.html#assort">ассортимент</a>
+          </li>
+          <li class="footer__list-item"><a class="footer__list-item--link" href="AboutMytishchi.html">о нас</a></li>
+          <li class="footer__list-item"><a class="footer__list-item--link" href="Tenants_Mytischi.html">аренда</a></li>
+          <li class="footer__list-item"><a class="footer__list-item--link" href="requisites_Mytischi.html">реквизиты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__block">
+        <p>г. Мытищи, б-р Ветеранов, стр.2</p>
+        <p><img class="footer-clock-img" src="./img/clock.png" alt=""> ежедневно с 9:00 до 21:00</p>
+        <div class="footer__link-item"><a class="footer__link open-popup" href="#">обратная связь</a></div>
+        <div><a class="footer__tel-link" href="tel:+79605227878">+7 (960) 522-78-78</a></div>
+        <div><a href="mailto:info@eco-bazar.ru" class="footer--mail-link">info@eco-bazar.ru</a></div>
+        <div class="popup__bg">
+          <form class="popup">
+            <div class="footer__popup-title">Обратный звонок</div>
+            <img src="./img/close-item.png" class="close-popup">
+            <div class="footer__popup-block">
+              <label>
+                <input type="text" required name="name">
+                <div class="label__text">
+                  Имя <span class="label__text-item">*</span>
+                </div>
+              </label>
+              <label>
+                <input type="tel" required name="tel">
+                <div class="label__text">
+                  Телефон <span class="label__text-item">*</span>
+                </div>
+              </label>
+            </div>
+            <div class="footer__popup-block">
+              <div class="footer__popup-copyright">
+                Указывая свои данные, вы даете согласие<br>
+                на обработку персональных данных<br>
+                в соответствии с <a href="#" class="footer__popup-copyright-link">политикой конфиденциальности</a>
+              </div>
+              <button type="submit">заказать</button>
+            </div>
+
+
+          </form>
+        </div>
+        <ul class="footer-sociallist">
+          <li class="footer-sociallist--item">
+            <a href="#" class="footer-sociallist--item-link">
+              <img class="header__down-sociallist--item-link-img" src="./img/whitetelegram.png" alt="telegram"
+                style="margin-right: 3px;">
+            </a>
+          </li>
+          <li class="footer-sociallist--item">
+            <a href="https://www.youtube.com/channel/UCqaaVCqPg4NUeqDAR8mbNTg" class="footer-sociallist--item-link">
+              <img class="header__down-sociallist--item-link-img" src="./img/whiteyoutube.png" style="width: 12px;
+    margin-left: 2px;" alt="youtube">
+            </a>
+          </li>
+          <li class="footer-sociallist--item">
+            <a href="https://vk.com/ecobazar_mytischi" class="footer-sociallist--item-link">
+              <img class="header__down-sociallist--item-link-img" src="./img/whitevk.png" alt="vk">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__block footer__block-copyright">
+        <p>&copy; <b>ЭкоБазар 2011 &mdash; 2024</b> </p>
+        <p class="footer__block-copyright--text">Все права защищены. Любое использование материалов сайта в сети
+          Internet допустимо при условии размещения
+          гипертекстовой ссылки на источник заимствования. Использование материалов вне сети Internet<br>допускается
+          исключительно с письменного разрешения правообладателя.</p>
+      </div>
+    </div>
+
+  </footer>
+
+
+  <script src="./js/slider-main.js"></script>
+  <script src="./js/index.js" defer></script>
+  <script src="./js/lib.js"></script>
+  <script src="./js/slider-stories.js"></script>
+  <script src="./js/footer-popup.js"></script>
+  <script src="./js/header-popup-seach.js"></script>
+  <script src="./js/header-popup-map.js"></script>
+  <script src="./js/dragscroll.js"></script>
+  <script src="./js/dragscroll-mob.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#basic-form").validate({
+        errorClass: "error fail-alert",
+        validClass: "valid success-alert",
+        rules: {
+          name: {
+            required: true,
+            minlength: 3
+          },
+          email: {
+            required: true,
+            email: true
+          },
+          phone: {
+            required: true,
+            number: true,
+            minlength: 10
+          }
+        },
+        messages: {
+          name: {
+            minlength: "Имя должно содержать не менее трех символов"
+          },
+          email: {
+            email: "Почта должна быть в формате ivanov@mail.ru"
+          },
+          phone: {
+            minlength: "Номер телефона должен содержать не менее 10 цифр",
+            number: "Введите номер телефона в формате 79990001122"
+          }
+        }
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".hamburger").click(function () {
+        $(this).toggleClass("is-active");
+      });
+    });
+  </script>
+  <script>
+    $(`.information__link,
+    .rent__block-contacts__link,
+    .rent__block-down--link,
+    .footer__link,
+    .lib__link`).click(function (e) {
+
+      var posX = $(this).offset().left,
+        posY = $(this).offset().top,
+        buttonWidth = $(this).width(),
+        buttonHeight = $(this).height();
+
+      $(this).prepend("<span class='ripple'></span>");
+
+      if (buttonWidth >= buttonHeight) {
+        buttonHeight = buttonWidth;
+      } else {
+        buttonWidth = buttonHeight;
+      }
+      var x = e.pageX - posX - buttonWidth / 2;
+      var y = e.pageY - posY - buttonHeight / 2;
+
+      $(".ripple").css({
+        width: buttonWidth,
+        height: buttonHeight,
+        top: y + 'px',
+        left: x + 'px'
+      }).addClass("rippleEffect");
+    });
+  </script>
+</body>
+
+
+</html>

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>реквизиты Мытищи</title>
+
+  <link rel="icon" href="./img/favicon.svg" type="image/x-icon">
+
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/header_popup-seach.css">
+  <link rel="stylesheet" href="./css/header_popup-map.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/footer-popup.css">
+
+  <link rel="stylesheet" href="./css/requisites.css">
+
+  <link rel="stylesheet" href="./css/main_adaptation.css">
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__top">
+        <ul class="header__top-list">
+          <li class="header__top-list--item">
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">
+                <img class="dropbtn-img" src="./img/yellow_mark.png" alt="mark">
+                Мытищи
+                <img class="dropbtn-arrow" src="./img/drop-arrow.png" alt="arrow">
+              </button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="Obninsk.html">Обнинск</a>
+              </div>
+            </div>
+          </li>
+          <li class="header__top-list--item">
+            <a href="mytishchi.html#contacts" class="header__top-list--item-link">Как добраться</a>
+          </li>
+          <li class="header__top-list--item open-header-popup-map">
+            <a href="" class="header__top-list--item-link header__top-list--item-link--modal">Карта
+              ТЦ</a>
+          </li>
+
+          <div class="header-popup-map">
+            <form class="popup-map">
+              <img src="./img/close-item.png" class="close-popup-map">
+              <div class="container">
+                <div class="container modal__map-container">
+                  <div class="modal__map-title">экобазар мытищи</div>
+                  <div class="modal__map-list">
+                    <div class="modal__map-menu">
+                      <div class="modal__map-floor">
+                        <div class="modal__map-floor--text">этаж</div>
+                        <div class="modal__map-floor--number modal__map-floor--number-active" data-path="one">1</div>
+                        <div class="modal__map-floor--number" data-path="two">2</div>
+                      </div>
+
+                      <div class="modal__map-download">
+                        <a class="modal__map-download--link" href="./img/MytischiMap.pdf" download><img
+                            class="modal__map-download--link-img" src="./img/download-white.png">сохранить карту</a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="container modal__map-container-img modal__map-container-img-active dragscroll"
+                  data-target="one">
+                  <div><img class="modal__map-img" id="map" src="./img/MytischiFloorFirst.svg"></div>
+                  <div class="zoom-container">
+                    <div class="zoom-container--plus"><img class="zoom-container--plus-img" onclick="zoomin()"
+                        src="./img/plus-icon.png" alt=""></div>
+                    <div class="zoom-container--minus"><img class="zoom-container--minus-img" onclick="zoomout()"
+                        src="./img/minus-icon.png" alt=""></div>
+                  </div>
+                </div>
+
+                <div class="container modal__map-container-img dragscroll" data-target="two">
+                  <div><img class="modal__map-img" id="mapSecond" src="./img/MytischiFloorSecond.svg"></div>
+                  <div class="zoom-container">
+                    <div class="zoom-container--plus"><img class="zoom-container--plus-img" onclick="zoominSecond()"
+                        src="./img/plus-icon.png" alt=""></div>
+                    <div class="zoom-container--minus"><img class="zoom-container--minus-img" onclick="zoomoutSecond()"
+                        src="./img/minus-icon.png" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <li class="header__top-list--item">
+            <a href="AboutMytishchi.html" class="header__top-list--item-link">Контакты</a>
+          </li>
+          <li class="open-header-popup-seach">
+            <a href="#" class="header__top-list--item-seach">
+              <img class="header__top-list--item-seach-img" src="./img/seach-icon.png" alt="seach">
+            </a>
+          </li>
+          <div class="header-popup-seach">
+            <form class="popup-seach">
+              <img src="./img/close-item.png" class="close-popup-seach">
+              <div class="header__popup-seach--block">
+                <input class="header__popup-seach--block-input" type="text" placeholder="Поиск...">
+                <img src="./img/seach-icon.png" alt="" class="search-icon">
+              </div>
+            </form>
+          </div>
+          <div class="header-seach-menu-mob">
+            <div class="open-header-popup-seach header-seach-mob">
+              <a href="#" class="header__top-list--item-seach">
+                <img class="header__top-list--item-seach-img" src="./img/seach-icon.png" alt="seach">
+              </a>
+            </div>
+            <div class="burger__menu">
+              <div class="hamburger" id="hamburger-1">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+              </div>
+              <div>
+                <ul id="menu">
+                  <li class="header__down-list--item">
+                    <a href="events_Mytischi.html" class="header__down-list--item-link">события</a>
+                  </li>
+                  <li class="header__down-list--item">
+                    <a href="#assort" class="header__down-list--item-link">ассортимент</a>
+                  </li>
+                  <li class="header__down-list--item">
+                    <a href="AboutMytishchi.html" class="header__down-list--item-link">о нас</a>
+                  </li>
+                  <li class="header__down-list--item">
+                    <a href="Tenants_Mytischi.html" class="header__down-list--item-link">аренда</a>
+                  </li>
+                  <li class="header__down-list--item">
+                    <a href="requisites_Obninsk.html" class="header__down-list--item-link">реквизиты</a>
+                  </li>
+                  <ul class="header__down-sociallist header__down-sociallist--mob">
+                    <li class="header__down-sociallist--item">
+                      <a href="#" target="_blank" class="header__down-sociallist--item-link">
+                        <img class="header__down-sociallist--item-link-img" src="./img/telegram.svg" alt="telegram">
+                      </a>
+                    </li>
+                    <li class="header__down-sociallist--item">
+                      <a href="https://www.youtube.com/channel/UCqaaVCqPg4NUeqDAR8mbNTg" target="_blank"
+                        class="header__down-sociallist--item-link">
+                        <img class="header__down-sociallist--item-link-img" src="./img/youtube.svg" alt="youtube"
+                          style="width: 14px; margin-left: 5px;">
+                      </a>
+                    </li>
+                    <li class="header__down-sociallist--item">
+                      <a href="https://vk.com/ecobazar_obninsk" class="header__down-sociallist--item-link"
+                        target="_blank">
+                        <img class="header__down-sociallist--item-link-img" src="./img/vk.svg" alt="vk">
+                      </a>
+                    </li>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </div>
+      <div class="header__down">
+        <div class="header__down-item"><a href="index.html"><img class="header__down-logo" src="./img/logo.png"
+              alt=""></a></div>
+        <div class="header__down-item">
+          <ul class="header__down-list">
+            <li class="header__down-list--item">
+              <a href="events_Mytischi.html" class="header__down-list--item-link">события</a>
+            </li>
+            <li class="header__down-list--item">
+              <a href="mytishchi.html#assort" class="header__down-list--item-link">ассортимент</a>
+            </li>
+            <li class="header__down-list--item">
+              <a href="AboutMytishchi.html" class="header__down-list--item-link">о нас</a>
+            </li>
+            <li class="header__down-list--item">
+              <a href="Tenants_Mytischi.html" class="header__down-list--item-link">аренда</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__down-item">
+          <ul class="header__down-sociallist">
+            <li class="header__down-sociallist--item">
+              <a href="#" class="header__down-sociallist--item-link" target="_blank">
+                <img class="header__down-sociallist--item-link-img" src="./img/telegram.svg" alt="telegram">
+              </a>
+            </li>
+            <li class="header__down-sociallist--item">
+              <a href="https://www.youtube.com/channel/UCqaaVCqPg4NUeqDAR8mbNTg"
+                class="header__down-sociallist--item-link" target="_blank">
+                <img class="header__down-sociallist--item-link-img" src="./img/youtube.svg" alt="youtube"
+                  style="width: 15px; margin-left: 3px;">
+              </a>
+            </li>
+            <li class="header__down-sociallist--item">
+              <a href="https://vk.com/ecobazar_mytischi" class="header__down-sociallist--item-link" target="_blank">
+                <img class="header__down-sociallist--item-link-img" src="./img/vk.svg" alt="vk">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="requisites">
+    <div class="requisites__container">
+      <div class="requisites__title">Реквизиты</div>
+      <div class="requisites__content">
+        <ul class="requisites__first">
+          <li>Наименование фирмы</li>
+          <li>ИНН</li>
+          <li>КПП</li>
+          <li>ОГРН</li>
+          <li>ОКПО</li>
+          <li>Расчетный счет</li>
+          <li>Банк</li>
+          <li>БИК</li>
+          <li>Корр. счет</li>
+          <li>Юридический адрес</li>
+          <li>Телефон</li>
+          <li>Генеральный директор</li>
+          <li>Исполнительный директор</li>
+        </ul>
+        <ul>
+          <li>ООО «УК “ЭкоБазар-Мытищи»</li>
+          <li>5029153633</li>
+          <li>502901001</li>
+          <li>1115029006938</li>
+          <li>92683745</li>
+          <li>40702810238000011499</li>
+          <li>ПАО СБЕРБАНК г. Москвы </li>
+          <li>44525225</li>
+          <li>30101810400000000225</li>
+          <li>141021, Московская область, г.Мытищи, б-р Ветеранов, стр.2.</li>
+          <li>+7 (495) 582-77-11</li>
+          <li>-</li>
+          <li>Исполнительный директор по Доверенности от 01.06.2023
+            Михаил Михайлович Чернышев</li>
+        </ul>
+      </div>
+
+      <div class="requisites__content-mob">
+        <ul class="requisites__list">
+          <li class="requisites__list-item">
+            <div class="requisites__list-item--title">Наименование фирмы</div>
+            <div class="requisites__list-item--inner">ООО «УК “ЭкоБазар-Мытищи»</div>
+          </li>
+          <li class="requisites__list-item">
+            <div class="requisites__list-item--title">ИНН</div>
+            <div class="requisites__list-item--inner">5029153633</div>
+          </li>
+          <li class="requisites__list-item">
+            <div class="requisites__list-item--title">КПП</div>
+            <div class="requisites__list-item--inner">502901001</div>
+          </li>
+          <li class="requisites__list-item">
+            <div class="requisites__list-item--title">ОГРН</div>
+            <div class="requisites__list-item--inner">1115029006938</div>
+          </li>
+          <li class="requisites__list-item">
+            <div class="requisites__list-item--title">ОКПО</div>
+            <div class="requisites__list-item--inner">92683745</div>
+          </li>
+          <li class="requisites__list-item">
+            <div class="requisites__list-item--title">Расчетный счет</div>
+            <div class="requisites__list-item--inner">40702810238000011499</div>
+          </li>
+          <li class="requisites__list-item">
+            <div class="requisites__list-item--title">Банк</div>
+            <div class="requisites__list-item--inner">ПАО СБЕРБАНК</div>
+          </li>
+          <li class="requisites__list-item">
+            <div class="requisites__list-item--title">БИК</div>
+            <div class="requisites__list-item--inner">44525225</div>
+          </li>
+          <li class="requisites__list-item">
+            <div class="requisites__list-item--title">Корр. счет</div>
+            <div class="requisites__list-item--inner">30101810400000000225</div>
+          </li>
+          <li class="requisites__list-item">
+            <div class="requisites__list-item--title">Юридический адрес</div>
+            <div class="requisites__list-item--inner">141021, Московская область, г.Мытищи, б-р Ветеранов, стр.2.</div>
+          </li>
+          <li class="requisites__list-item">
+            <div class="requisites__list-item--title">Телефон</div>
+            <div class="requisites__list-item--inner">+7 (495) 582-77-11</div>
+          </li>
+          <li class="requisites__list-item">
+            <div class="requisites__list-item--title">Генеральный директор</div>
+            <div class="requisites__list-item--inner">-</div>
+          </li>
+          <li class="requisites__list-item">
+            <div class="requisites__list-item--title">Исполнительный директор</div>
+            <div class="requisites__list-item--inner">Михаил Михайлович Чернышев, действующий на основании
+              доверенности б/н от 01.06.2023 г</div>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer__container">
+      <div class="footer__block">
+        <div class="footer__logo">
+          <img class="footer__logo-img" src="./img/logowhite.png" alt="logo">
+        </div>
+      </div>
+      <div class="footer__block">
+        <ul class="footer__list">
+          <li class="footer__list-item"><a class="footer__list-item--link" href="events_Mytischi.html">события</a></li>
+          <li class="footer__list-item"><a class="footer__list-item--link" href="mytishchi.html#assort">ассортимент</a>
+          </li>
+          <li class="footer__list-item"><a class="footer__list-item--link" href="AboutMytishchi.html">о нас</a></li>
+          <li class="footer__list-item"><a class="footer__list-item--link" href="Tenants_Mytischi.html">аренда</a></li>
+          <li class="footer__list-item"><a class="footer__list-item--link" href="requisites_Mytischi.html">реквизиты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__block">
+        <p>г. Мытищи, б-р Ветеранов, стр.2</p>
+        <p><img class="footer-clock-img" src="./img/clock.png" alt=""> ежедневно с 9:00 до 21:00</p>
+        <div class="footer__link-item"><a class="footer__link open-popup" href="#">обратная связь</a></div>
+        <div><a class="footer__tel-link" href="tel:+79605227878">+7 (960) 522-78-78</a></div>
+        <div><a href="mailto:info@eco-bazar.ru" class="footer--mail-link">info@eco-bazar.ru</a></div>
+        <div class="popup__bg">
+          <form class="popup">
+            <div class="footer__popup-title">Обратный звонок</div>
+            <img src="./img/close-item.png" class="close-popup">
+            <div class="footer__popup-block">
+              <label>
+                <input type="text" required name="name">
+                <div class="label__text">
+                  Имя <span class="label__text-item">*</span>
+                </div>
+              </label>
+              <label>
+                <input type="tel" required name="tel">
+                <div class="label__text">
+                  Телефон <span class="label__text-item">*</span>
+                </div>
+              </label>
+            </div>
+            <div class="footer__popup-block">
+              <div class="footer__popup-copyright">
+                Указывая свои данные, вы даете согласие<br>
+                на обработку персональных данных<br>
+                в соответствии с <a href="#" class="footer__popup-copyright-link">политикой конфиденциальности</a>
+              </div>
+              <button type="submit">заказать</button>
+            </div>
+
+
+          </form>
+        </div>
+        <ul class="footer-sociallist">
+          <li class="footer-sociallist--item">
+            <a href="#" class="footer-sociallist--item-link">
+              <img class="header__down-sociallist--item-link-img" src="./img/whitetelegram.png" alt="telegram"
+                style="margin-right: 3px;">
+            </a>
+          </li>
+          <li class="footer-sociallist--item">
+            <a href="#" class="footer-sociallist--item-link">
+              <img class="header__down-sociallist--item-link-img" src="./img/whiteyoutube.png" style="width: 12px;
+    margin-left: 2px;" alt="youtube">
+            </a>
+          </li>
+          <li class="footer-sociallist--item">
+            <a href="#" class="footer-sociallist--item-link">
+              <img class="header__down-sociallist--item-link-img" src="./img/whitevk.png" alt="vk">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__block footer__block-copyright">
+        <p>&copy; <b>ЭкоБазар 2011 &mdash; 2024</b> </p>
+        <p class="footer__block-copyright--text">Все права защищены. Любое использование материалов сайта в сети
+          Internet допустимо при условии размещения
+          гипертекстовой ссылки на источник заимствования. Использование материалов вне сети Internet<br>допускается
+          исключительно с письменного разрешения правообладателя.</p>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="./js/index.js"></script>
+  <script src="./js/footer-popup.js"></script>
+  <script src="./js/header-popup-seach.js"></script>
+  <script src="./js/header-popup-map.js"></script>
+  <script src="./js/dragscroll.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".hamburger").click(function () {
+        $(this).toggleClass("is-active");
+      });
+    });
+  </script>
+</body>
+
+</html>
