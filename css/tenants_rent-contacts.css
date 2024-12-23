@@ -1,0 +1,211 @@
+.rent-contacts {
+  margin-bottom: 80px;
+}
+
+.rent-contacts__menu {
+  width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 60px 0;
+}
+
+.rent-contacts__menu-item {
+  margin: 0 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.rent-contacts__menu-item--title {
+  font-size: 19px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+
+.rent-contacts__menu-item-active {
+  border-bottom: 2px solid #ffcc00;
+}
+
+.rent-contacts__content {
+  margin: 0 auto;
+  max-width: 640px;
+}
+
+.rent-contacts__contact-name,
+.rent-contacts__contact-tel,
+.rent-contacts__contact-mail {
+  font-size: 21px;
+  line-height: 22.7px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.rent-contacts__contact-tel--link {
+  color: #000;
+  text-decoration: none;
+}
+
+.rent-contacts__contact-mail--link {
+  color: #249c72;
+  text-decoration: underline;
+}
+
+.rent-contacts__contact-mail {
+  color: #249c72;
+  text-decoration: underline;
+}
+
+.rent-contacts__contact-tel--icon {
+  width: 18px;
+}
+
+.rent-contacts__contact-btns {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  margin: 30px 0 50px 0;
+}
+
+.rent-contacts__contact-btn {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #ffcc00;
+  padding: 15px 40px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 40px;
+}
+
+.rent-contacts__contact-btn--icon {
+  width: 12px;
+}
+
+.upload-block {
+  margin-top: 50px;
+}
+
+.rent-contacts-copyright {
+  max-width: 45%;
+}
+
+.holder span {
+  color: red;
+}
+
+.input-star {
+  position: relative;
+  margin: 0 0 40px 0;
+  height: 25px;
+}
+
+.holder {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  z-index: -1;
+  padding: 2px 0;
+  color: #b2b2b2;
+}
+
+.fakeinput {
+  width: 100%;
+  color: #b2b2b2;
+  position: absolute;
+  background-color: transparent;
+  outline: none;
+  height: 30px;
+  border: none;
+  border-bottom: 2px solid #808080;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fakeinput:focus~.holder {
+  color: #e4e4e4;
+}
+
+.rent-contacts--half {
+  width: 48%;
+}
+
+.rent-contacts--half-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+}
+
+.rent-contacts__content-item {
+  display: none;
+}
+
+.rent-contacts__content-item-active {
+  display: block;
+}
+
+.rent-contacts__link {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 500;
+  border: none;
+  border-radius: 40px;
+  padding: 20px 50px;
+  background-color: #000;
+}
+
+.rent-contacts__menu-item--img {
+  height: 45px;
+  margin-bottom: 5px;
+}
+
+
+@media (max-width:668px) {
+  .rent-contacts__container {
+    padding: 0 20px;
+  }
+
+  .rent-contacts__menu-item--title {
+    text-align: center;
+  }
+
+  .rent-contacts__contact-btn {
+    font-size: 14px;
+    padding: 10px 40px;
+    margin: 7px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .rent-contacts__contact-btns {
+    flex-direction: column;
+    margin: 30px 0;
+  }
+
+  .rent-contacts--half-block {
+    flex-direction: column;
+  }
+
+  .rent-contacts--half {
+    width: 100%;
+  }
+
+  .rent-contacts__link {
+    width: 100%;
+    text-align: center;
+  }
+
+  .rent-contacts-copyright {
+    max-width: 100%;
+  }
+}

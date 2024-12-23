@@ -1,0 +1,157 @@
+:root {
+  --color-grey: #818181;
+  --color-light-grey: #b8b8b8;
+  --color-yellow: #ffcc00;
+  --color-light-yellow: #ffdb4d;
+  --color-link: #249c72;
+}
+
+footer {
+  background-color: #1a1a1a;
+}
+
+.footer__logo {
+  width: 200px;
+}
+
+.footer__logo-img {
+  width: 100%;
+}
+
+.footer__container {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 80px 60px;
+}
+
+.footer__block {
+  color: #fff;
+  width: 24%;
+}
+
+.footer__list-item {
+  width: 95%;
+  padding: 12px 0;
+  border-top: 1px solid #333;
+}
+
+.footer__list-item--link {
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 12px 0;
+}
+
+.footer-clock-img {
+  width: 13px;
+  margin-top: 4px;
+}
+
+.footer__link-item {
+  padding: 10px 0;
+  margin: 20px 0;
+}
+
+.footer__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFF;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 10px 80px;
+  transition: all .2s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.footer__link:hover {
+  background-color: #333;
+}
+
+.footer__tel-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.footer-sociallist {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-top: 20px;
+}
+
+.footer-sociallist--item {
+  margin-right: 13px;
+}
+
+.footer-sociallist--item-link {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #3e3e3e;
+  transition: all .2s ease;
+}
+
+.footer-sociallist--item-link:hover {
+  background-color: #333;
+}
+
+.footer--mail-link {
+  color: var(--color-link);
+  font-size: 16px;
+}
+
+.footer__block-copyright {
+  color: #808080;
+  font-size: 16px;
+}
+
+.footer__block-copyright p {
+  margin-bottom: 20px;
+}
+
+.footer__block-copyright--text {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@media (max-width:996px) {
+  .footer__container {
+    flex-wrap: wrap;
+  }
+
+  .footer__block {
+    width: 48%;
+  }
+}
+
+@media (max-width:520px) {
+  .footer__block {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .footer__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .footer__logo-img {
+    width: 200px;
+  }
+
+  .footer-sociallist {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,132 @@
+.advantage__container {
+  padding: 100px 60px;
+}
+
+.advantage__title {
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.advantage__block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.advantage__block-item {
+  width: 33.3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 45px;
+}
+
+.advantage__block-item--icon-img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.advantage__block-item--title {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 40px 0 12px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.advantage__block-item--text {
+  font-size: 18px;
+  line-height: 21px;
+  color: #808080;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.advantage__block-item--icon,
+.advantage__block-item--text {
+  height: 110px;
+}
+
+.advantage__block-item--mob {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  order: 1;
+}
+
+@media (max-width:1200px) {
+  .advantage__block-item--title {
+    font-size: 18px;
+  }
+
+  .advantage__block-item--text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width:840px) {
+  .advantage__block-item {
+    width: 50%;
+  }
+}
+
+@media (max-width:668px) {
+  .advantage__container {
+    padding: 100px 20px;
+  }
+
+  .advantage__title {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .advantage__block-item {
+    width: 100%;
+    flex-direction: row;
+    padding: 20px;
+    max-height: 140px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .advantage__block-item--icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+    padding: 0 20px 0 0;
+  }
+
+  .advantage__block-item--title,
+  .advantage__block-item--text {
+    text-align: left;
+  }
+
+  .advantage__block-item--title {
+    margin: 0 0 12px 0;
+  }
+
+  .advantage__block-item--text {
+    margin: 0;
+    height: auto;
+  }
+
+  .advantage__block-item:nth-child(2n) .advantage__block-item--icon {
+    order: 2;
+    padding: 0 0 0 20px;
+  }
+
+  .advantage__block-item--title {
+    font-size: 16px;
+  }
+
+  .advantage__block-item--text {
+    font-size: 13px;
+  }
+}

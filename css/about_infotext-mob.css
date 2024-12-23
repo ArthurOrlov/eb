@@ -1,0 +1,18 @@
+.infotext-mob {
+  display: none;
+}
+
+.infotext-mob__text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  color: #000;
+  text-align: center;
+  margin: 80px 60px 60px 60px;
+}
+
+@media (max-width:560px) {
+  .infotext-mob {
+    display: block;
+  }
+}

@@ -1,0 +1,77 @@
+:root {
+  --color-grey: #818181;
+  --color-light-grey: #b8b8b8;
+  --color-yellow: #ffcc00;
+  --color-light-yellow: #ffdb4d;
+  --color-link: #249c72;
+}
+
+.information {
+  max-width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(../img/apple.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.information p {
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+  max-width: 30%;
+  text-align: center;
+  margin: 0;
+}
+
+.information__link,
+.rent__block-contacts__link {
+  text-transform: uppercase;
+  background-color: var(--color-yellow);
+  font-size: 19px;
+  font-weight: 600;
+  padding: 20px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #000;
+  margin-top: 60px;
+  outline: none;
+  background-position: center;
+  transition: background .5s;
+  overflow: hidden;
+  position: relative;
+}
+
+.information__link:hover,
+.rent__block-contacts__link:hover {
+  background: #ffdb4d radial-gradient(circle, transparent 1%, #ffdb4d 20%) center/15000%;
+}
+
+
+@media (max-width: 996px) {
+  .information p {
+    font-size: 24px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .information p {
+    max-width: 80%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .information {
+    height: 70vh;
+  }
+
+  .information p {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,274 @@
+.modal__cross {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 80px;
+  right: 80px;
+  fill: #444;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 12px;
+  box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
+}
+
+.modal__title-seach {
+  border: none;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.header__top-list--item-seach-img {
+  width: 20px;
+}
+
+.modal__map-container {
+  padding: 50px 50px 30px 50px;
+}
+
+.modal__map-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #b2b2b2;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.modal__map-menu {
+  display: flex;
+  align-items: center;
+}
+
+.modal__map-floor {
+  margin-right: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.modal__map-floor--text {
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.modal__map-floor--number {
+  width: 30px;
+  height: 30px;
+  font-weight: 600;
+  border: 1px solid #b8b8b8;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__map-floor--number-active {
+  background-color: #ffcc00;
+  border: none;
+}
+
+.modal__map-download--link {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  padding: 12px 40px;
+  background-color: #000;
+  border-radius: 20px;
+}
+
+.modal__map-download--link-img {
+  width: 12px;
+  margin-right: 7px;
+}
+
+.modal__map-container-img {
+  padding: 0;
+}
+
+.modal__map-img {
+  width: 120%;
+  height: auto;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0, 0);
+}
+
+.modal__map-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.js-modal-close__map {
+  position: relative;
+  margin: 0;
+  top: 0;
+  right: 0;
+}
+
+.modal__map-container-img {
+  display: none;
+  position: relative;
+}
+
+.modal__map-container-img-active {
+  display: block;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  cursor: grab;
+}
+
+.header-popup-map {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+  z-index: 1010;
+  transition: .3s all;
+}
+
+.header-popup-map.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-map {
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  max-width: 1400px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1005;
+  text-align: center;
+  padding: 0;
+  border-radius: 3px;
+  background-color: #fff;
+  transition: 0.3s all;
+}
+
+.popup-map.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.close-popup-map {
+  position: absolute;
+  top: 60px;
+  right: 60px;
+  cursor: pointer;
+  border: 1px solid #cfd0d3;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
+}
+
+
+
+
+
+
+.zoom-container {
+  background-color: rgba(128, 128, 128, .5);
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0 60px 40px 0;
+}
+
+.zoom-container--plus,
+.zoom-container--minus {
+  width: 45px;
+  height: 50px;
+  padding: 10px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.zoom-container--plus:active,
+.zoom-container--minus:active {
+  background-color: #b8b8b8;
+  cursor: pointer;
+}
+
+.zoom-container--plus-img,
+.zoom-container--minus-img {
+  width: 100%;
+}
+
+.zoom-container--plus {
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+.zoom-container--minus {
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+
+@media (max-width:720px) {
+  .modal__map-img {
+    width: 200%;
+  }
+
+  .modal__map-floor {
+    margin-right: 20px;
+  }
+
+  .modal__map-download--link {
+    padding: 12px 20px;
+  }
+
+  .popup-map .container {
+    padding: 30px 10px;
+  }
+
+  .modal__map-container {
+    padding: 50px 0 30px 0;
+  }
+
+}
+
+@media (max-width:520px) {
+  .close-popup-map {
+    right: 10px;
+    top: 20px;
+  }
+
+  .modal__map-download--link {
+    padding: 12px 12px;
+  }
+
+  .modal__map-floor {
+    margin-right: 10px;
+  }
+
+  .modal__map-img {
+    width: 350%;
+  }
+
+  .modal__map-download--link-img--mob {
+    display: none;
+  }
+
+  .zoom-container {
+    margin: 0 20px 20px 0;
+  }
+}

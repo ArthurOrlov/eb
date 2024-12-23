@@ -1,0 +1,166 @@
+@font-face {
+  font-family: 'Tilda Sans';
+  src: url('../fonts/TildaSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Tilda Sans';
+  font-weight: 400;
+  font-size: 16px;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+}
+
+:root {
+  --color-grey: #818181;
+  --color-light-grey: #b8b8b8;
+  --color-yellow: #ffcc00;
+  --color-light-yellow: #ffdb4d;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+
+.btn {
+  background-position: center;
+  transition: background 0.8s;
+}
+
+.btn:active {
+  background-color: #6eb9f7;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.container {
+  padding: 0 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.download-files {
+  display: flex;
+  margin-top: 30px;
+}
+
+.download-files--item {
+  margin-right: 10px;
+}
+
+.download-files--item-link {
+  border-radius: 20px;
+  background-color: #b2b2b2;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 15px;
+}
+
+input {
+  border-radius: 0;
+}
+
+.ripple {
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(0);
+  position: absolute;
+  opacity: 1;
+}
+
+.rippleEffect {
+  animation: rippleDrop .6s linear;
+}
+
+@keyframes rippleDrop {
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+
+
+@media (max-width:992px) {
+  .change__block {
+    padding: 0 80px;
+  }
+}
+
+@media (max-width:800px) {
+  .change__block {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width:768px) {
+  h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width:577px) {
+  h2 {
+    font-size: 24px;
+    margin: 7px 10px;
+  }
+
+  .change__block {
+    padding: 0 20px;
+  }
+
+  .change__block-arrow {
+    width: 30px;
+  }
+}
+
+@media (max-width:420px) {
+  h2 {
+    font-size: 22px;
+  }
+
+  .change__block {
+    padding: 0 12px;
+  }
+
+  .change__block-address {
+    font-size: 10px;
+  }
+
+  .change__block-arrow {
+    width: 25px;
+  }
+}

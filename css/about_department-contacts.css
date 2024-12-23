@@ -1,0 +1,101 @@
+.department-contacts__title {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.department-contacts__container {
+  padding: 100px 60px;
+}
+
+.department-contacts__block {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+}
+
+.department-contacts__block:not(:last-child) {
+  border-bottom: 2px solid #ededed;
+}
+
+.department-contacts__block-icon {
+  width: 80px;
+  height: 40px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.department-contacts__block-icon--img {
+  max-height: 100%;
+}
+
+.department-contacts__block-title--text {
+  color: #b2b2b2;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.department-contacts__block-title--time,
+.department-contacts__block-tel {
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+}
+
+.department-contacts__block-tel,
+.department-contacts__block-mail,
+.department-contacts__block-title {
+  width: 26%;
+  text-align: left;
+}
+
+.department-contacts__block-tel div,
+.department-contacts__block-mail div {
+  margin-bottom: 20px;
+}
+
+
+@media (max-width:768px) {
+
+  .department-contacts__container {
+    padding: 10px 60px 60px 60px;
+  }
+
+  .department-contacts__title h2 {
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .department-contacts__block {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .department-contacts__block-tel,
+  .department-contacts__block-mail,
+  .department-contacts__block-title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .department-contacts__block-icon {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .department-contacts__block-tel div,
+  .department-contacts__block-mail div,
+  .department-contacts__block-title--time {
+    margin-bottom: 5px;
+  }
+
+  .contacts__block h4 {
+    margin-bottom: 60px;
+  }
+}

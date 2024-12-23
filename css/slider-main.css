@@ -1,0 +1,117 @@
+.ant-carousel {
+  margin: 0;
+  border: none;
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+
+.ant-carousel-list {
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.participants-title {
+  width: 100%;
+}
+
+.ant-carousel-element {
+  text-align: center;
+  display: block;
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+.participants-card-img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 800px;
+}
+
+
+.ant-carousel-hider {
+  overflow: hidden;
+}
+
+.carousel-arrows {
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 90%;
+  right: 170%;
+  padding: 0;
+}
+
+.carousel-arrows__details {
+  right: 205%;
+}
+
+.carousel-arrows-mob {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: -20px;
+}
+
+.ant-carousel-arrow-img {
+  width: 8px;
+  height: 17px;
+}
+
+.ant-carousel-arrow-left--img {
+  width: 10px;
+}
+
+.ant-carousel-arrow-left,
+.ant-carousel-arrow-right {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all .25s ease-in;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.ant-carousel-arrow-left {
+  margin-right: 10px;
+}
+
+.ant-carousel-arrow-left:hover,
+.ant-carousel-arrow-right:hover {
+  background-color: #f5f5f5;
+}
+
+
+div.ant-carousel-dots {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: -200px;
+  bottom: -50px;
+  z-index: 30;
+  text-align: center;
+}
+
+span.ant-dot {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  padding: 0;
+  display: inline-block;
+  background-color: #ffcc00;
+  border-radius: 5px;
+  cursor: pointer;
+}

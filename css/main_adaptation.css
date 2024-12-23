@@ -1,0 +1,100 @@
+@media (max-width:1300px) {
+  .carousel-arrows {
+    width: 17%;
+    right: 180%;
+  }
+
+  .rent__block-contacts__link {
+    padding: 15px 30px;
+  }
+
+  .footer__link {
+    padding: 10px 50px;
+  }
+}
+
+@media (max-width:1200px) {
+  .carousel-arrows {
+    width: 20%;
+    right: 200%;
+  }
+
+  .rent__block-contacts__link {
+    padding: 15px 25px;
+  }
+
+  .rent__block-down--link {
+    padding: 20px 25px;
+  }
+}
+
+@media (max-width:1150px) {
+  .carousel-arrows {
+    width: 25%;
+    right: 220%;
+  }
+
+  .rent__block-down--link {
+    font-size: 16px;
+  }
+
+  .footer__link {
+    padding: 10px 30px;
+  }
+}
+
+@media (max-width:1050px) {
+  .carousel-arrows {
+    width: 35%;
+    right: 250%;
+  }
+}
+
+@media (max-width:996px) {
+  .events__line {
+    display: none;
+  }
+
+  .carousel-arrows {
+    width: 100px;
+    right: 70%;
+    margin-top: 70px;
+  }
+}
+
+@media (max-width:620px) {
+  .carousel-arrows {
+    right: 80%;
+  }
+
+  .ant-carousel-list {
+    width: 190px;
+  }
+
+  .events__card {
+    text-decoration: none;
+    color: #000;
+    text-align: left;
+    width: 180px;
+    height: 290px;
+  }
+
+  .events__card-link {
+    text-align: left;
+  }
+
+  .events__card-title {
+    padding: 10px 10px 10px 10px;
+  }
+
+  .events__card-img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width:560px) {
+  .carousel-arrows {
+    right: 70%;
+  }
+}
